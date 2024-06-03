@@ -1,28 +1,15 @@
-let num1 = prompt('enter your num1'); 
-let op = prompt ('enter your operator');
-let num2 = prompt('enter your  second num2');
+let Fname = prompt('enter your name');
+let Age = Number(prompt('Enter your age'));
+let citizen = prompt('Enter your citizenship');
 
 
-if (op ==='+'){
-    console.log ('your answer is '+ (num1 + num2));
-}
+if(Age >= 18 && citizen === 'SA'){
+alert('Hi ' + Fname+ ' Congres you qualifiy to vote!!');
+} else{
 
- 
-else if (op ==='-'){
-    console.log (' your answer is '+ (num1 - num2));
-}
-
-else if (op ==='*'){
-    console.log (' your answer is '+ (num1 * num2));
-
-}
-else if (op==='/'){
-    console.log (' your answer is '+ (num1 / num2));
-
+    alert('Hi ' +  " Sorry you don't qualifiy to vote! \n Coz you either young or not SA citizen");
 }
 
 
-else{
-console.log(num1/num2);
-    console.log('invalid operator');
-}
+
+
